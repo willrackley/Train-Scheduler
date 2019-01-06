@@ -1,0 +1,20 @@
+.navbar {
+    background: #000000;
+}
+
+#logoImg {
+    width: 250px;
+}
+
+.tableCard {
+    background: #1B6B65;
+}
+
+#formCard {
+    background: #000000;
+}
+.jumbotron  {
+    background-image: url(../images/trainstation.jpg);
+    background-size: cover;
+}
+

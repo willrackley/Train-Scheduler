@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title>Train Scheduler</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--moment.js-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--Firebase-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+
+<body>
+    <!--Navbar with logo-->
+    <nav class="navbar">
+            <a class="navbar-brand" href="#">
+                <img id="logoImg" src="assets/images/trainLogo.png" alt="webpage logo">
+            </a>   
+    </nav>
+
+    <!--Jumbotron-->
+    <div class="jumbotron" id="forJumbotronImage">
+        <div class="container">
+            <h1 class="display-4 text-light">Never Miss Another Train</h1>
+            <p class="lead text-light">Add your train's information and know exactly when it will arrive</p>
+
+            <!--table containing train info-->
+            <div class="card">
+                <div class="card-header text-light tableCard">
+                        <h3>Current Train Schedule</h3>
+                </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">Frequency (min)</th>
+                                <th scope="col">Next Arrival</th>
+                                <th scope="col">Minutes Away</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+            </div>
+        </div> 
+    </div>
+
+    <br>
+
+    <div class="container">
+    <div class="card">
+            <div class="card-header text-light" id="formCard">
+                <h3>Add Train</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Train Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Train Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Enter Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstTrainTime">First Train Time (HH:mm military time)</label>
+                        <input type="text" class="form-control" id="firstTrainTime"  placeholder="Enter First Train Time">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Monthly Rate">
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+            </div>
+        </div>
+        </div>
+
+
+<script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+
+</html>
