@@ -55,6 +55,8 @@
     <br>
 
     <div class="container">
+        <div class="row">
+            <div class="col-6">
     <div class="card">
             <div class="card-header text-light" id="formCard">
                 <h3>Add Train</h3>
@@ -82,6 +84,29 @@
             </div>
         </div>
         </div>
+        <div class="col-6 editForm">
+            <div class="card-header text-light" id="formCard">
+                <h3>Edit Train</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="Destination">Destination</label>
+                        <input type="text" class="form-control" id="editDestination">
+                    </div>
+                    <div class="form-group">
+                            <label for="firstTrainTime">First Train Time (HH:mm military time)</label>
+                            <input type="text" class="form-control" id="editFirstTrainTime" >
+                        </div>
+                        <div class="form-group">
+                            <label for="frequency">Frequency (min)</label>
+                            <input type="text" class="form-control" id="editFrequency">
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary mb-2" id="editSubmitButton">Submit</button>
+             </div>
+        </div>
+    </div>
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery.js"></script>
