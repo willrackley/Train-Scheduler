@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!--Custom css-->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <!--moment.js-->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 </head>
 
 <body>
     <!--Navbar with logo-->
-    <nav class="navbar">
-            <a class="navbar-brand" href="#">
-                <img id="logoImg" src="assets/images/trainLogo.png" alt="webpage logo">
-            </a>   
+    <nav class="navbar bg-light">
+        <h2>TRAIN SCHEDULER</h2>
     </nav>
 
     <!--Jumbotron-->
@@ -54,9 +56,10 @@
 
     <br>
 
-    <div class="container">
+    <div class="container mb-3">
         <div class="row">
             <div class="col-6">
+    <!--this card holds the form where the user can add a train-->
     <div class="card">
             <div class="card-header text-light" id="formCard">
                 <h3>Add Train</h3>
@@ -85,6 +88,7 @@
         </div>
         </div>
         <div class="col-6 editForm">
+            <!--this card holds the form where the user can edit a train-->
             <div class="card-header text-light" id="formCard">
                 <h3>Edit Train</h3>
             </div>
@@ -103,6 +107,7 @@
                             <input type="text" class="form-control" id="editFrequency">
                         </div>
                     </form>
+                    <button type="submit" class="btn btn-primary mb-2" id="editCancelButton">Cancel</button>
                     <button type="submit" class="btn btn-primary mb-2" id="editSubmitButton">Submit</button>
              </div>
         </div>
@@ -110,9 +115,8 @@
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery.js"></script>
-
 <!--firebase-->
-<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>  
 <!--javascript file-->
 <script type="text/javascript" src="assets/javascript/logic.js"></script>
 
