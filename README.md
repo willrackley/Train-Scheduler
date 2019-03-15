@@ -1,4 +1,5 @@
 # Train-Scheduler
+
 ![Landing Page](assets/images/train.png)
 
 A train schedule application that incorporates Firebase to host arrival and departure data. The app retrieves and manipulates this information with Moment.js. The website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
@@ -11,3 +12,4 @@ The user can also add a train to the database by entering the train name, destin
 
 ### visit the application below
 https://willrackley.github.io/Train-Scheduler/
+
